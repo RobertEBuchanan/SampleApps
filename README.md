@@ -1,2 +1,2 @@
 # SampleApps
-Sample Applications
+Sample application for trying out new stuff...
