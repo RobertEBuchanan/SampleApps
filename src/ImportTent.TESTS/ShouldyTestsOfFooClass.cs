@@ -6,7 +6,6 @@ namespace ImportTent.TESTS
 {
     [TestFixture]
     public class ShouldyTestsOfFooClass
-
     {
         [Test]        
         public void FailingTest()
