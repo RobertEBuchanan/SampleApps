@@ -1,17 +1,27 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28307.168
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28606.126
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SquirrelApp.CLI", "SquirrelApp.CLI\SquirrelApp.CLI.csproj", "{772DB9FB-BF3C-4795-A6C9-ADEEBBC708DE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SquirrelApp.CLI", "SquirrelApp.CLI\SquirrelApp.CLI.csproj", "{772DB9FB-BF3C-4795-A6C9-ADEEBBC708DE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sample.Lib.SimpleLib", "Sample.Lib.SimpleLib\Sample.Lib.SimpleLib.csproj", "{EB53457E-3C88-4EA4-B7A0-AEDF5266877E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sample.Lib.SimpleLib", "Sample.Lib.SimpleLib\Sample.Lib.SimpleLib.csproj", "{EB53457E-3C88-4EA4-B7A0-AEDF5266877E}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{48DA5AA3-27E8-42BE-B66E-A8658D6857D1}"
 	ProjectSection(SolutionItems) = preProject
 		CHANGELOG.md = CHANGELOG.md
 		README.md = README.md
 	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "zCSVImporter", "zCSVImporter", "{1F38EE4D-C0CC-48D1-9265-F42EFAB3422F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "zSquirrel Deployment", "zSquirrel Deployment", "{59FEB252-9C89-437A-BBBD-0ADFABEFA086}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImportTent.WinForms", "ImportTent.WinForms\ImportTent.WinForms.csproj", "{9D7036BA-BBF8-4907-82E3-62789374A92E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImportTent.TESTS", "ImportTent.TESTS\ImportTent.TESTS.csproj", "{C4FE9908-1275-4E85-923F-7C4F770A2255}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImportTent.Lib", "ImportTent.Lib\ImportTent.Lib.csproj", "{D4EFDB1E-555A-428D-A274-24D04A4E8256}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,9 +37,28 @@ Global
 		{EB53457E-3C88-4EA4-B7A0-AEDF5266877E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EB53457E-3C88-4EA4-B7A0-AEDF5266877E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EB53457E-3C88-4EA4-B7A0-AEDF5266877E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9D7036BA-BBF8-4907-82E3-62789374A92E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9D7036BA-BBF8-4907-82E3-62789374A92E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9D7036BA-BBF8-4907-82E3-62789374A92E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9D7036BA-BBF8-4907-82E3-62789374A92E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C4FE9908-1275-4E85-923F-7C4F770A2255}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C4FE9908-1275-4E85-923F-7C4F770A2255}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C4FE9908-1275-4E85-923F-7C4F770A2255}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C4FE9908-1275-4E85-923F-7C4F770A2255}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D4EFDB1E-555A-428D-A274-24D04A4E8256}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D4EFDB1E-555A-428D-A274-24D04A4E8256}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D4EFDB1E-555A-428D-A274-24D04A4E8256}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D4EFDB1E-555A-428D-A274-24D04A4E8256}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{772DB9FB-BF3C-4795-A6C9-ADEEBBC708DE} = {59FEB252-9C89-437A-BBBD-0ADFABEFA086}
+		{EB53457E-3C88-4EA4-B7A0-AEDF5266877E} = {59FEB252-9C89-437A-BBBD-0ADFABEFA086}
+		{9D7036BA-BBF8-4907-82E3-62789374A92E} = {1F38EE4D-C0CC-48D1-9265-F42EFAB3422F}
+		{C4FE9908-1275-4E85-923F-7C4F770A2255} = {1F38EE4D-C0CC-48D1-9265-F42EFAB3422F}
+		{D4EFDB1E-555A-428D-A274-24D04A4E8256} = {1F38EE4D-C0CC-48D1-9265-F42EFAB3422F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2D4B183B-6BA9-436B-8058-052BBC087F17}
