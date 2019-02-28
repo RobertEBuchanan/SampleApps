@@ -1,6 +1,6 @@
 ﻿namespace ImportTent.Lib
 {
-    public class Class1
+    public class FooClass
     {
         public string GetHello() => "Hello!!!";
     }
