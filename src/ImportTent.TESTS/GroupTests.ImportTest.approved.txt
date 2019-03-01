@@ -1,0 +1,113 @@
+﻿Root = new List<IGroup>()
+{
+    [0] = new Group()
+    {
+        Name = "John Doe0"
+        Abbreviation = "JD"
+        Comment = "some comment"
+        Active = True
+        Years = 2
+        ActiveYears = 2
+        FilingCount = 1
+    }
+    [1] = new Group()
+    {
+        Name = "John Doe1"
+        Abbreviation = "JD"
+        Comment = "some comment"
+        Active = True
+        Years = 2
+        ActiveYears = 2
+        FilingCount = 0
+    }
+    [2] = new Group()
+    {
+        Name = "John Doe2"
+        Abbreviation = "JD"
+        Comment = "some comment"
+        Active = True
+        Years = 2
+        ActiveYears = 2
+        FilingCount = 0
+    }
+    [3] = new Group()
+    {
+        Name = "John Doe3"
+        Abbreviation = "JD"
+        Comment = "some comment"
+        Active = True
+        Years = 2
+        ActiveYears = 2
+        FilingCount = 0
+    }
+    [4] = new Group()
+    {
+        Name = "John Doe4"
+        Abbreviation = "JD"
+        Comment = "some comment"
+        Active = True
+        Years = 2
+        ActiveYears = 2
+        FilingCount = 0
+    }
+    [5] = new Group()
+    {
+        Name = "John Doe5"
+        Abbreviation = "JD"
+        Comment = "some comment"
+        Active = True
+        Years = 2
+        ActiveYears = 2
+        FilingCount = 0
+    }
+    [6] = new Group()
+    {
+        Name = "John Doe6"
+        Abbreviation = "JD"
+        Comment = "some comment"
+        Active = True
+        Years = 2
+        ActiveYears = 2
+        FilingCount = 0
+    }
+    [7] = new Group()
+    {
+        Name = "John Doe7"
+        Abbreviation = "JD"
+        Comment = "some comment"
+        Active = True
+        Years = 2
+        ActiveYears = 2
+        FilingCount = 0
+    }
+    [8] = new Group()
+    {
+        Name = "John Doe8"
+        Abbreviation = "JD"
+        Comment = "some comment"
+        Active = True
+        Years = 2
+        ActiveYears = 2
+        FilingCount = 0
+    }
+    [9] = new Group()
+    {
+        Name = "John Doe9"
+        Abbreviation = "JD"
+        Comment = "some comment"
+        Active = True
+        Years = 2
+        ActiveYears = 2
+        FilingCount = 0
+    }
+    [10] = new Group()
+    {
+        Name = "John Doe10"
+        Abbreviation = "JD"
+        Comment = "some comment"
+        Active = True
+        Years = 2
+        ActiveYears = 2
+        FilingCount = 0
+    }
+}

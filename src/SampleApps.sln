@@ -23,6 +23,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImportTent.TESTS", "ImportT
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImportTent.Lib", "ImportTent.Lib\ImportTent.Lib.csproj", "{D4EFDB1E-555A-428D-A274-24D04A4E8256}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImportTent.Lib.BLL", "ImportTent.Lib.BLL\ImportTent.Lib.BLL.csproj", "{C6ED814A-4B23-4B03-844F-8814FD7401DC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -49,6 +51,10 @@ Global
 		{D4EFDB1E-555A-428D-A274-24D04A4E8256}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D4EFDB1E-555A-428D-A274-24D04A4E8256}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D4EFDB1E-555A-428D-A274-24D04A4E8256}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C6ED814A-4B23-4B03-844F-8814FD7401DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6ED814A-4B23-4B03-844F-8814FD7401DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C6ED814A-4B23-4B03-844F-8814FD7401DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C6ED814A-4B23-4B03-844F-8814FD7401DC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -59,6 +65,7 @@ Global
 		{9D7036BA-BBF8-4907-82E3-62789374A92E} = {1F38EE4D-C0CC-48D1-9265-F42EFAB3422F}
 		{C4FE9908-1275-4E85-923F-7C4F770A2255} = {1F38EE4D-C0CC-48D1-9265-F42EFAB3422F}
 		{D4EFDB1E-555A-428D-A274-24D04A4E8256} = {1F38EE4D-C0CC-48D1-9265-F42EFAB3422F}
+		{C6ED814A-4B23-4B03-844F-8814FD7401DC} = {1F38EE4D-C0CC-48D1-9265-F42EFAB3422F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2D4B183B-6BA9-436B-8058-052BBC087F17}

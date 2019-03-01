@@ -43,6 +43,9 @@
     <Reference Include="ApprovalTests, Version=3.0.0.0, Culture=neutral, PublicKeyToken=11bd7d124fc62e0f, processorArchitecture=MSIL">
       <HintPath>..\packages\ApprovalTests.3.0.19\lib\netstandard2.0\ApprovalTests.dll</HintPath>
     </Reference>
+    <Reference Include="ApprovalTests.StatePrinter, Version=3.0.0.0, Culture=neutral, PublicKeyToken=11bd7d124fc62e0f, processorArchitecture=MSIL">
+      <HintPath>..\packages\ApprovalTests.StatePrinter.3.0.18\lib\net461\ApprovalTests.StatePrinter.dll</HintPath>
+    </Reference>
     <Reference Include="ApprovalUtilities, Version=3.0.0.0, Culture=neutral, PublicKeyToken=11bd7d124fc62e0f, processorArchitecture=MSIL">
       <HintPath>..\packages\ApprovalUtilities.3.0.18\lib\net461\ApprovalUtilities.dll</HintPath>
     </Reference>
@@ -64,6 +67,9 @@
     </Reference>
     <Reference Include="Shouldly, Version=3.0.2.0, Culture=neutral, PublicKeyToken=6042cbcb05cbc941, processorArchitecture=MSIL">
       <HintPath>..\packages\Shouldly.3.0.2\lib\net451\Shouldly.dll</HintPath>
+    </Reference>
+    <Reference Include="StatePrinter, Version=3.0.0.0, Culture=neutral, PublicKeyToken=693eec472ad792e3, processorArchitecture=MSIL">
+      <HintPath>..\packages\StatePrinter.3.0.1\lib\net35\StatePrinter.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
@@ -99,10 +105,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ApprovalTestOfFooClass.cs" />
+    <Compile Include="GroupTests.cs" />
     <Compile Include="ShouldyTestsOfFooClass.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\ImportTent.Lib.BLL\ImportTent.Lib.BLL.csproj">
+      <Project>{C6ED814A-4B23-4B03-844F-8814FD7401DC}</Project>
+      <Name>ImportTent.Lib.BLL</Name>
+    </ProjectReference>
     <ProjectReference Include="..\ImportTent.Lib\ImportTent.Lib.csproj">
       <Project>{d4efdb1e-555a-428d-a274-24d04a4e8256}</Project>
       <Name>ImportTent.Lib</Name>
