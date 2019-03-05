@@ -12,25 +12,40 @@ namespace ImportTent.Lib.BLL.Tests
     public class GroupTests
     {
         [Test()]
-        [UseReporter(typeof(DiffReporter))]        
+        [UseReporter(typeof(DiffReporter))]
         public void ImportTest()
         {
             var sut = new Group();
-            var csvData = "Abbreviation,Active,ActiveYears,Comment,FilingCount,Name,Years" + Environment.NewLine + 
-                          "JD,True,2,some comment,1,John Doe0,2" + Environment.NewLine                           +
-                          "JD,True,2,some comment,0,John Doe1,2" + Environment.NewLine                           +
-                          "JD,True,2,some comment,0,John Doe2,2" + Environment.NewLine                           +
-                          "JD,True,2,some comment,0,John Doe3,2" + Environment.NewLine                           +
-                          "JD,True,2,some comment,0,John Doe4,2" + Environment.NewLine                           +
-                          "JD,True,2,some comment,0,John Doe5,2" + Environment.NewLine                           +
-                          "JD,True,2,some comment,0,John Doe6,2" + Environment.NewLine                           +
-                          "JD,True,2,some comment,0,John Doe7,2" + Environment.NewLine                           +
-                          "JD,True,2,some comment,0,John Doe8,2" + Environment.NewLine                           +
-                          "JD,True,2,some comment,0,John Doe9,2" + Environment.NewLine                           +
+            var csvData = "Abbreviation,Active,ActiveYears,Comment,FilingCount,Name,Years" + Environment.NewLine +
+                          "JD,True,2,some comment,1,John Doe0,2" + Environment.NewLine +
+                          "JD,True,2,some comment,0,John Doe1,2" + Environment.NewLine +
+                          "JD,True,2,some comment,0,John Doe2,2" + Environment.NewLine +
+                          "JD,True,2,some comment,0,John Doe3,2" + Environment.NewLine +
+                          "JD,True,2,some comment,0,John Doe4,2" + Environment.NewLine +
+                          "JD,True,2,some comment,0,John Doe5,2" + Environment.NewLine +
+                          "JD,True,2,some comment,0,John Doe6,2" + Environment.NewLine +
+                          "JD,True,2,some comment,0,John Doe7,2" + Environment.NewLine +
+                          "JD,True,2,some comment,0,John Doe8,2" + Environment.NewLine +
+                          "JD,True,2,some comment,0,John Doe9,2" + Environment.NewLine +
                           "JD,True,2,some comment,0,John Doe10,2";
-            
+
             var result = sut.Import(csvData);
-           
+
+            // Assert
+            StatePrinterApprovals.Verify(result);
+        }
+        [Test()]
+        [UseReporter(typeof(DiffReporter))]
+        public void ImportTest_ToManyColumns()
+        {
+            var sut = new Group();
+            var csvData = "Abbreviation,Active,ActiveYears,Comment,FilingCount,Name,YearsAGO" + Environment.NewLine +
+                          "JD,True,2,some comment,1,John Doe0, 2" + Environment.NewLine +
+                          "JD,True,2,some comment,0,John Doe1,2" + Environment.NewLine +
+                          "JD,True,2,some comment,0,John Doe2,2";
+
+            var result = sut.Import(csvData);
+
             // Assert
             StatePrinterApprovals.Verify(result);
         }
